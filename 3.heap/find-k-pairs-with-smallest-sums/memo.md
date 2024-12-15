@@ -37,4 +37,3 @@ auto [minimum_index1, minimum_index2] = minimum_indexes_heap.top();
 
 # step3
 - 5分ほどで実装
-  - 保管やコピペがなければ10分ほどだろう
