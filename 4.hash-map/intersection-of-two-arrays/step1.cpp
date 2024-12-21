@@ -1,10 +1,10 @@
-#include <unordered_set>
+#include <set>
 
 class Solution {
 public:
   std::vector<int> intersection(std::vector<int>& nums1, std::vector<int>& nums2) {
-    std::unordered_set<int> seen_in_nums1;
-    std::unordered_set<int> seen_in_nums2;
+    std::set<int> seen_in_nums1;
+    std::set<int> seen_in_nums2;
     for (int num : nums1) {
       seen_in_nums1.insert(num);
     }
