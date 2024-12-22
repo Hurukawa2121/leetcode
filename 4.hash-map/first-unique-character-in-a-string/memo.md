@@ -10,7 +10,7 @@
 
 - しゃくとり法で実装した。
   - 時間計算量: O(NlogN), 空間計算量: O(N)
-  - https://github.com/colorbox/leetcode/blob/1fdb87356938b312be64bae5583e0095d0bd3530/387/step2_3.cpp
+  - 参考: https://github.com/colorbox/leetcode/blob/1fdb87356938b312be64bae5583e0095d0bd3530/387/step2_3.cpp
 
 - C++03 から `std::numeric_limits` がある。
   - `std::numeric_limits<int>::max()` で型 T の値の最大値を取得する。
