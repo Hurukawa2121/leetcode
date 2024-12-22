@@ -15,8 +15,8 @@ private:
   const char PLUS = '+';
   const char DOT = '.';
   std::vector<std::string> CanonicalizeEmails(const std::vector<std::string>& emails) {
-    auto CanonicalizeEmail = [this](std::string email) {
-      int at_sign_index = email.find(AT_SIGN);
+    auto CanonicalizeEmail = [this](const std::string& email) {
+      size_t at_sign_index = email.find(AT_SIGN);
       std::string local_name = email.substr(0, at_sign_index);
       std::string domain_name = email.substr(at_sign_index + 1);
       std::string canonicalized_local_name = CanonicalizeLocalName(local_name);

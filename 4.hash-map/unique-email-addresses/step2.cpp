@@ -37,7 +37,7 @@ private:
   std::string CanonicalizeLocalName(const std::string& local_name) {
     std::string name_without_plus = local_name.substr(0, local_name.find(PLUS, 0));
     std::string name_without_plus_and_dot = name_without_plus;
-    std::erase(name_without_plus_and_dot, '.');
+    std::erase(name_without_plus_and_dot, DOT);
     return name_without_plus_and_dot;
   }
 };
