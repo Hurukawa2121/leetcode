@@ -20,8 +20,8 @@ public:
         duplicated_characters.insert(current_character);
       } else {
         unique_character_list.push_back(current_character);
-        auto last_iter = prev(unique_character_list.end());
-        character_to_iterator[current_character] = last_iter;
+        auto current_iterator = prev(unique_character_list.end());
+        character_to_iterator[current_character] = current_iterator;
       }
     }
 
