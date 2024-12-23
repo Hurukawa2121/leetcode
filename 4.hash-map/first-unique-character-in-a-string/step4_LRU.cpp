@@ -26,7 +26,7 @@ public:
     }
 
     if (unique_character_list.empty()) {
-      return -1;
+      return -1; // Not Found
     }
     char first_unique_character = unique_character_list.front();
     int first_unique_index = s.find(first_unique_character);
