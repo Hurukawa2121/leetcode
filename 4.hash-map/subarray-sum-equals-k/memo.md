@@ -3,7 +3,7 @@
 - 問いは`sums[j] - sums[i] = k (i < j)` となる `i,j` のペアの数を求めることと読み換えられる。
   - `sums[j] = k + sums[i] (i < j)` や `sums[j] - k = sums[i] (i < j)` で一致判定すれば探索が二重ループにならず済む。
   - 累積和の構築も subarray の探索も前からするので、subarray を探索しながら累積和を計算できる。
-- メモ化は `std::map` で行う。
+- `std::map` でカウントする。
   - `std::map` か `std::unordered_map` の判断は難しい。 
   - 私の考え：https://github.com/Hurukawa2121/leetcode/blob/main/4.hash-map/group-anagrams/memo.md?plain=1#L10
 - 時間計算量: O(NlogN), 空間計算量: O(N)
