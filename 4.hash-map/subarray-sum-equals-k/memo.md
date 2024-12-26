@@ -24,7 +24,7 @@
 - 他のコードを見る。
 
 - 以下の if 文がなかった。
-  - 必要ない領域の確保のオーバーヘッドを考えたが、無くても LeetCode では Time にならず（これをパフォーマンス要件を満たしていると捉える）、無い方が読みやすい。
+  - 必要ない領域の確保のオーバーヘッドを考えたが、無くても LeetCode では Time Out にならず（これをパフォーマンス要件を満たしていると捉える）、無い方が読みやすい。
 ```cpp
 if (sum_to_count.contains(target_sum)) {
   k_sum_count += sum_to_count[target_sum];
@@ -33,12 +33,12 @@ if (sum_to_count.contains(target_sum)) {
 
 - 累積和を計算するのに C++17 からの `std::exclusive_scan()` が使える。
   - https://en.cppreference.com/w/cpp/algorithm/exclusive_scan
-  - ここで C++17 から`std::execution` のアルゴリズムの並列実行を許可する実行ポリシーがあることを知る。
+  - ここで C++17 から`std::execution` にアルゴリズムの並列実行を許可する実行ポリシーがあることを知る。
     - https://cpprefjp.github.io/reference/execution/execution/execution_policy.html#:~:text=parallel_policy%20/%20par
     - 確かに、排他制御をユーザが担うのかプログラムが担うのかを区別する必要がある。
 
 - `current_sum` は自明なので `sum` にする。
-- 累積和なので `sum` は `cumulative_sum` や `prefix_sum` にする。
+- 更に累積和なので `sum` は `cumulative_sum` や `prefix_sum` にする。
 
 ## step3
 - 補完無しで2分ほどで実装。
