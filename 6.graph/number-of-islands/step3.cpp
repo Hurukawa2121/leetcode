@@ -19,7 +19,7 @@ public:
     }
     return lands_count;
   }
-//おっしゃっていただいた主題からずれますが、パフォーマンスの話が考えていたより実数的でした。
+
 private:
   char water_char = '0';
   std::vector<std::pair<int, int>> diff_col_raw = {
