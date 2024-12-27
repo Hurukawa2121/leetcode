@@ -2,7 +2,7 @@
 
 - UnionFind を使うか探索する。
 - どちらも組む。
-  - Union-ind → 時間計算量: O(HW*logHW), 空間計算量: O(H*W)
+  - UnionFind → 時間計算量: O(HW*logHW), 空間計算量: O(H*W)
   - 探索 (BFS,DFS) → 時間計算量: O(H*W), 空間計算量: O(H*W)
 - ただ、2または4方向探索するため定数倍は少しかかる。
 
