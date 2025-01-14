@@ -27,7 +27,7 @@ public:
           if (next_word == endWord) {
             return ladder_length + 1;
           }
-          if (candidate_words.contains(next_word)) {
+          if (!candidate_words.contains(next_word)) {
             continue;
           }
           candidate_words.erase(current_word);
@@ -39,7 +39,7 @@ public:
   }
 
 private:
-  std::map<std::string, std::vector<std::string>> ComposeAdjacencyLis(std::set<std::string>& candidate_words) {
+  std::map<std::string, std::vector<std::string>> ComposeAdjacencyList(std::set<std::string>& candidate_words) {
     std::map<std::string, std::vector<std::string>> adjacency_list;
     for (const std::string& word : candidate_words) {
       for (int index = 0; index < word.size(); ++index) {
